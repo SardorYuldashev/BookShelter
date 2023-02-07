@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../images/books.webp">
+  <link rel="stylesheet" href="../styles/style.css">
+  <title>BookShelter</title>
+</head>
+
+<body class="body">
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <img src="../images/logo_color.svg" alt="logo" class="header__top-logo">
+
+        <div class="header__top-searchBox">
+          <form class="header__top-form">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" class="header__top-search" placeholder="Search books">
+          </form>
+        </div>
+
+        <div class="header__top-right">
+          <img src="../images/sun.svg" alt="sun" class="header__top-theme sun">
+          <img src="../images/moon.webp" alt="sun" class="header__top-theme moon">
+          <button class="header__top-logout">Logout</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="header__bottom">
+      <div class="container header__bottom-bottomBox">
+        <p class="header__bottom-result">
+          Showing <span class="header__bottom-span">0</span> Result(s)
+        </p>        
+
+        <button class="header__bottom-sort">
+          <i class="fa-regular fa-calendar"></i>
+          Order by newest
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <div class="main__wrapper">
+
+        <div class="main__bookmarkBox">
+          <h2 class="main__bookmarkBox-title">
+            Bookmark
+          </h2>
+
+          <p class="main__bookmarkBox-text">
+            A curated list of every book ever written
+          </p>
+
+          <i class="fa-solid fa-xmark main__bookmarkBox-close"></i>
+
+          <div class="main__bookmark">
+
+            <!-- <div class="main__bookmark-book">
+              <div class="main__bookmark-info">
+                <h2 class="main__bookmark-title">Python</h2>
+                <p class="main__bookmark-author">David M. Beazley</p>
+              </div>
+  
+              <div class="main__bookmark-buttons">
+                <button class="main__bookmark-btn ">
+                  <i class="fa-solid fa-book-open readBookmark"></i>
+                </button>
+                <button class="main__bookmark-btn ">
+                  <i class="fa-solid fa-delete-left deleteBookmark"></i>
+                </button>
+              </div>
+            </div> -->
+
+          </div>
+        </div>
+
+        <div class="main__content">
+
+          <div class="main__content-teaser">
+            <h2 class="main__content-teaser-title">
+              Bookmarks
+            </h2>
+            <p class="main__content-teaser-text">
+              If you don't like to read, you haven't found the right book
+            </p>
+          </div>
+
+          <!-- <div class="main__card">
+            <div class="main__card-imgBox">
+              <img src="../images/cardImg.svg" alt="Card Image" class="main__card-img">
+            </div>
+
+            <h2 class="main__card-title">
+              Python
+            </h2>
+
+            <p class="main__card-author">
+              David M. Beazley
+            </p>
+
+            <p class="main__card-year">
+              2009
+            </p>
+
+            <div class="main__card-buttons">
+              <button class="main__card-btn cardBookmark">
+                Bookmark
+              </button>
+
+              <button class="main__card-btn cardInfo">
+                More Info
+              </button>
+            </div>
+
+            <button class="main__card-readBtn">
+              Read
+            </button>
+          </div> -->
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+  <div class="sidebar">
+    <div class="sidebar__content">
+      <div class="sidebar__content-header">
+        <h2 class="sidebar__content-title">
+          Python
+        </h2>
+
+        <i class="fa-solid fa-xmark sidebar__content-close"></i>
+      </div>
+      <div class="sidebar__content-info">
+
+        <div class="sidebar__content-imgBox">
+          <img src="" alt="" class="sidebar__content-img">
+        </div>
+
+        <p class="sidebar__content-description"></p>
+
+        <div class="sidebar__content-authorBox sidebarAuthors">
+          <h2 class="sidebar__content-key">
+            Author :
+          </h2>
+          <p class="sidebar__content-value sidebarAuthor"></p>
+        </div>
+
+        <div class="sidebar__content-authorBox">
+          <h2 class="sidebar__content-key">
+            Published :
+          </h2>
+          <p class="sidebar__content-value sidebarPublished"></p>
+        </div>
+
+        <div class="sidebar__content-authorBox">
+          <h2 class="sidebar__content-key">
+            Publishers:
+          </h2>
+          <p class="sidebar__content-value sidebarPublishers"></p>
+        </div>
+
+        <div class="sidebar__content-authorBox">
+          <h2 class="sidebar__content-key">
+            Categories:
+          </h2>
+          <p class="sidebar__content-value sidebarCategories"></p>
+        </div>
+
+        <div class="sidebar__content-authorBox">
+          <h2 class="sidebar__content-key">
+            Pages Count:
+          </h2>
+          <p class="sidebar__content-value sidebarCounts"></p>
+        </div>
+
+        <div class="sidebar__content-button">
+          <a class="sidebar__content-btn" href="#!" target="_blank">Read</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="bookmarkOpen">Book <br> mark</button>
+
+  <div class="pagination">
+    <div class="pagination__content">
+      <list class="pagination__content-list">
+        <li class="pagination__content-li pagination__prewLi" id="prewLi">Prew</li>
+
+        <div class="pagination__content-pages">
+          <!-- <li class="header__pagination-li birinchi" id="birinchi">1</li>
+
+          <li class="header__pagination-li ikkinchi" id="ikkinchi">2</li>
+
+          <li class="header__pagination-li uchichi" id="uchichi">...</li>
+          <li class="header__pagination-li thirdLi" id="fourthLi">4</li>
+          <li class="header__pagination-li thirdLi" id="fifthLi">5</li> -->          
+        </div>        
+
+        <li class="pagination__content-li pagination__nextLi" id="nextLi">Next</li>
+      </list>
+    </div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/3c33e6b0c2.js" crossorigin="anonymous"></script>
+  <script src="../apps/home.js"></script>
+</body>
+
+</html>

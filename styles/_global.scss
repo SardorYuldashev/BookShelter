@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  transition: .3s;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: 'NSM500';
+  src: url('../fonts/NotoSans-Medium\ 500.ttf');
+}
+
+@font-face {
+  font-family: 'RM500';
+  src: url('../fonts/Rubik-Medium\ 500.ttf');
+}
+
+@font-face {
+  font-family: 'RR400';
+  src: url('../fonts/Rubik-Regular\ 400.ttf');
+}
