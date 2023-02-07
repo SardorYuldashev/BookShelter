@@ -174,7 +174,7 @@ function createPaginations() {
 paginationPage.addEventListener('click', (e) => {
   let pageNum = e.target.id;
   pageNumber = +pageNum;
-  getData(indexPage, pageNum, orderNew);
+  getData(indexPage, pageNum*6, orderNew);
 });
 
 //prew page
@@ -184,7 +184,7 @@ prewLi.addEventListener('click', () => {
   }
   pageNumber--;
   console.log(pageNumber);
-  getData(indexPage, pageNumber, orderNew);
+  getData(indexPage, pageNumber*6, orderNew);
 });
 // next page
 nextLi.addEventListener('click', () => {
